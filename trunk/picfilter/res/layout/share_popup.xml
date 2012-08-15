@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/transparent"
+	android:gravity="bottom"
+	android:paddingRight="10dip"
+	android:paddingTop="10dip" >
+	<com.filter.view.SPScrollView
+		android:id="@+id/background"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/bg_share_popup_1"
+		android:fadingEdge="none"
+		android:fadingEdgeLength="0px" >
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/transparent"
+			android:orientation="vertical"
+			android:paddingBottom="20dip"
+			android:paddingLeft="5dip"
+			android:paddingRight="5dip"
+			android:paddingTop="5dip" >
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:text="@string/share_popup_title"
+				android:textAppearance="@style/font_share_title" />
+			<RelativeLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dip"
+				android:layout_marginTop="10dip" >
+				<CheckBox
+					android:id="@+id/check_sina"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/ic_share_popup_sina"
+					android:button="@color/transparent"
+					android:checked="true" />
+				<CheckBox
+					android:id="@+id/check_tencent"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dip"
+					android:layout_toRightOf="@id/check_sina"
+					android:background="@drawable/ic_share_popup_tencent"
+					android:button="@color/transparent"
+					android:checked="true" />
+				<CheckBox
+					android:id="@+id/check_renren"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dip"
+					android:layout_toRightOf="@id/check_tencent"
+					android:background="@drawable/ic_share_popup_renren"
+					android:button="@color/transparent"
+					android:checked="true" />
+				<Button
+					android:id="@+id/btn_sina"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignLeft="@id/check_sina"
+					android:layout_alignTop="@id/check_sina"
+					android:background="@drawable/ic_share_popup_sina_default" />
+				<Button
+					android:id="@+id/btn_tencent"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignLeft="@id/check_tencent"
+					android:layout_alignTop="@id/check_tencent"
+					android:background="@drawable/ic_share_popup_tencent_default" />
+				<Button
+					android:id="@+id/btn_renren"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignLeft="@id/check_renren"
+					android:layout_alignTop="@id/check_renren"
+					android:background="@drawable/ic_share_popup_renren_default" />
+			</RelativeLayout>
+			<com.filter.view.SPEditText
+				android:id="@+id/edit"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:autoLink="web"
+				android:background="@drawable/ic_reg_edit"
+				android:gravity="top"
+				android:inputType="textMultiLine|textNoSuggestions"
+				android:lines="4"
+				android:linksClickable="false"
+				android:textColorLink="@color/link" />
+			<RelativeLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dip"
+				android:gravity="center_vertical"
+				android:paddingLeft="5dip"
+				android:paddingRight="5dip" >
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:orientation="vertical" >
+					<TextView
+						android:id="@+id/tv_input_limit"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="5dip"
+						android:text="@string/share_popup_input_limit"
+						android:textAppearance="@style/font_share_input_limit" />
+				</LinearLayout>
+				<Button
+					android:id="@+id/btn_share"
+					style="@style/font_reg_btn"
+					android:layout_width="120dip"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:background="@drawable/ic_login_right_btn"
+					android:shadowColor="#FF59872b"
+					android:shadowDx="0.0"
+					android:shadowDy="-2.0"
+					android:shadowRadius="0.1"
+					android:text="@string/share_popup_btn_share" />
+			</RelativeLayout>
+		</LinearLayout>
+	</com.filter.view.SPScrollView>
+</LinearLayout>
