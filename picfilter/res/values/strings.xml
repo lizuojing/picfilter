@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, PicFilterAndShareActivity!</string>
+    <string name="app_name">PicFilterAndShare</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="camera">用摄像头拍照</string>
+    <string name="media">上传本地照片</string>
+    <string name="pick_image">选择图片</string>
+
+    <!-- 微博绑定页面 -->
+    <string name="weibo_sina_bind">新浪微博绑定成功</string>
+    <string name="weibo_tencent_bind">腾讯微博绑定成功</string>
+    <string name="weibo_renren_bind">人人网绑定成功</string>
+
+    <!-- 分享弹出界面 -->
+    <string name="share_popup_title">请选择分享平台</string>
+    <string name="FilterActivity_CheckBox_Sina">新浪微博</string>
+    <string name="FilterActivity_CheckBox_Tencent">腾讯微博</string>
+    <string name="FilterActivity_CheckBox_Renren">人人网</string>
+    <string name="share_popup_btn_share">分享</string>
+    <string name="share_popup_input_limit">还可以输入 %d 个字</string>
+    <!-- Toast message -->
+    <string name="toast_share_content_null">分享的内容不能为空</string>
+    <string name="toast_share_type_list_null">请至少选择一个分享平台</string>
+    <string name="toast_share_has_sent">已发送分享内容</string>
+
+    <!-- 滤镜 -->
+    <string name="ice_filter">冰冻</string>
+    <string name="molten_filter">熔铸</string>
+    <string name="comic_filter">连环画</string>
+    <string name="softglow_filter">柔化</string>
+    <string name="glowingedge_filter">亮边</string>
+    <string name="feather_filter">羽化</string>
+    <string name="zoomblur_filter">缩放</string>
+    <string name="lomo_filter">Lomo</string>
+    <string name="gray_filter">黑白</string>
+    <string name="relief_filter">浮雕</string>
+    <string name="vague_filter">模糊</string>
+    <string name="oil_filter">油画</string>
+    <string name="neon_filter">霓虹灯</string>
+    <string name="pixelate_filter">像素化</string>
+    <string name="tv_filter">TV</string>
+    <string name="invert_filter">反色</string>
+    <string name="block_filter">版画</string>
+    <string name="old_filter">怀旧</string>
+    <string name="sharp_filter">锐化</string>
+    <string name="light_filter">光照</string>
+</resources>
